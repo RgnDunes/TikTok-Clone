@@ -1,0 +1,8 @@
+.video {
+  position: relative;
+  border: 1px solid white;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+}
