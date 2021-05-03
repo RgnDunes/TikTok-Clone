@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./Video.css";
+import VideoFooter from "./VideoFooter";
 
 function Video() {
   const videoRef = useRef(null);
@@ -24,6 +25,7 @@ function Video() {
         className="video__player"
         src="https://www.youtube.com/embed/GePLvNgWROg"
       />
+      <VideoFooter />
     </div>
   );
 }

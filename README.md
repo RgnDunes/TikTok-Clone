@@ -4,4 +4,8 @@
 
 ## Packages Used
 
-## Important Points
+- react-ticker
+
+## Important Points Used
+
+- useRef
