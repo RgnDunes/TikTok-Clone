@@ -1,6 +1,6 @@
 # TikTok Clone using ReactJS
 
-## API Used
+> Live demo : [TikTok Clone](https://dunes-tiktok-clone-react.web.app/)
 
 ## Packages Used
 
@@ -9,3 +9,8 @@
 ## Important Points Used
 
 - useRef
+
+```
+How to run code on your Localhost :
+Open your computer download the zip, type "npm install" and then run "npm start"
+```
