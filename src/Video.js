@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./Video.css";
 import VideoFooter from "./VideoFooter";
+import VideoSidebar from "./VideoSidebar";
 
-function Video() {
+function Video({ url, channel, description, song, likes, messages, shares }) {
   const videoRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
@@ -11,7 +12,7 @@ function Video() {
       videoRef.current.pause();
       setPlaying(false);
     } else {
-      videoRef.current.playing();
+      videoRef.current.play();
       setPlaying(true);
     }
   };
@@ -23,9 +24,10 @@ function Video() {
         onClick={onVideoPress}
         loop
         className="video__player"
-        src="https://www.youtube.com/embed/GePLvNgWROg"
+        src={url}
       />
-      <VideoFooter />
+      <VideoFooter channel={channel} description={description} song={song} />
+      <VideoSidebar likes={likes} shares={shares} messages={messages} />
     </div>
   );
 }
